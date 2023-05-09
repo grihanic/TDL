@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+    tools:context="com.example.todolist.MainActivity">
+
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="375dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/searchview"
+        android:backgroundTint="#CCC2FE"
+        android:iconifiedByDefault="false"
+        android:queryHint="Вводите туть"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="72dp"
+        tools:listitem="@layout/view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="109dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/on_time1" />
+
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="168dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="@color/black"
+            android:text="Расписание" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#14ffffff"
+            android:text="Заметки" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="57dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="108dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_143"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_332"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="56dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/group_234" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

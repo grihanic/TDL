@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import com.example.myapplication.R
+import kotlinx.coroutines.InternalCoroutinesApi
 
 class MainActivity2 : AppCompatActivity() {
 
+    @OptIn(InternalCoroutinesApi::class)
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

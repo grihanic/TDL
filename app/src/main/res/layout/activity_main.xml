@@ -11,12 +11,17 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="378dp"
-        android:layout_height="374dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="116dp"
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+
+        android:layout_marginLeft="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655"
         tools:listitem="@layout/views" />
 
     <ImageButton

@@ -8,7 +8,5 @@ data class db (
     @PrimaryKey(autoGenerate = true)
     val id: Long,
     val title: String,
-    val text:String
-
-
+    val text: String
         )
